@@ -1,0 +1,26 @@
+{
+  "name": "node-ts-esm-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "node --test",
+    "start": "node src/app.ts",
+    "dev": "node --watch src/app.ts",
+    "debug": "node --inspect src/app.ts",
+    "debug:break": "node --inspect-brk src/app.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=26.0.0"
+  },
+  "dependencies": {
+    "cronstrue": "^3.39.0",
+    "dotenv": "^18.0.10",
+    "mysql2": "^3.24.6",
+    "node-cron": "^4.6.0"
+  }
+}
